@@ -2,12 +2,12 @@ angular
 	.module('U4OssApp')
 	.service('GithubService', ['$resource',
 		function($resource) {
-			var organizations = $resource('http://api.github.com/orgs/:org', {
+			var organizations = $resource('//api.github.com/orgs/:org', {
 				org: '@org'
 			}, {
 				repos: {
 					method: 'GET',
-					url: 'http://api.github.com/orgs/:org/repos',
+					url: '//api.github.com/orgs/:org/repos',
 					isArray: true
 				}
 			})
