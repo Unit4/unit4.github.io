@@ -8,7 +8,10 @@ angular
 				repos: {
 					method: 'GET',
 					url: '//api.github.com/orgs/:org/repos',
-					isArray: true
+					isArray: true,
+					headers: {
+						'Accept': 'application/vnd.github.v3+json'
+					}
 				}
 			})
 
