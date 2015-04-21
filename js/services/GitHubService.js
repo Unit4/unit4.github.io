@@ -3,21 +3,26 @@ angular
 	.service('GithubService', ['$resource',
 		function($resource) {
 			var organizations = $resource('//api.github.com/orgs/:org', {
-				org: '@org'
+				org: '@org',
+				callback: 'JSON_CALLBACK'
 			}, {
 				repos: {
-					method: 'GET',
-					url: '//api.github.com/orgs/:org/repos',
-					isArray: true,
+					method: 'JSONP',
+					url: 'https://api.github.com/orgs/:org/repos',
 					headers: {
 						'Accept': 'application/vnd.github.v3+json'
 					}
 				}
-			})
+			});
 
 			this.getOrgRepos = function(name) {
 				return organizations.repos({
 					org: name
+				}).$promise.then(function(response) {
+					return response.data;
+				}).catch(function(e){
+					console.log(e);
+					return [];
 				});
 			};
 		}

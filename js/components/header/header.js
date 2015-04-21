@@ -4,5 +4,5 @@ angular
 		return {
 			templateUrl: 'js/components/header/header.tpl.html',
 			restrict: 'E'
-		}
+		};
 	});

@@ -7,8 +7,10 @@ angular
 				templateUrl: 'js/app.tpl.html',
 				restrict: 'E',
 				link: function(scope) {
-					scope.repos = GithubService.getOrgRepos('Unit4');
+					GithubService.getOrgRepos('Unit4').then(function(repos) {
+						scope.repos = repos;
+					});
 				}
-			}
+			};
 		}
 	]);
