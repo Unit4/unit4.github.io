@@ -2,46 +2,20 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/u4.css">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script type="text/javascript" src="https://code.angularjs.org/1.3.15/angular-resource.min.js"></script>
+
+  <script type="text/javascript" src="js/U4App.js"></script>
+  <script type="text/javascript" src="js/components/header/header.js"></script>
+  <script type="text/javascript" src="js/components/repo/repo.js"></script>
+  <script type="text/javascript" src="js/services/GitHubService.js"></script>
   <title>Unit4 Open Source</title>
 </head>
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12" style="padding: 10px">
-        <div class="jumbotron">
-          <h2>Unit4 Open Source</h2>
-          <p>Our revolutionary new approach is delivering the next generation of self-driving, intelligent ERP and enterprise applications for service organizations and their people.</p>
-        </div>
-      </div>
-    </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3" style="padding: 10px">
-          <a href="https://github.com/Unit4/karma-extjs">
-            <h2>karma-extjs</h2>
-          </a>
-          <p>Use Karma to run tests for Ext JS applications</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3" style="padding: 10px">
-          <a href="https://github.com/Unit4/jsb3">
-            <h2>jsb3</h2>
-          </a>
-          <p>Process a jsb3 file into an array of files</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3" style="padding: 10px">
-          <a href="https://github.com/Unit4/SAML-Authenticator-M4">
-            <h2>SAML-Authenticator-M4</h2>
-          </a>
-          <p>UNIT4 Agresso Milestone 4 Custom claims based authenticator supporting SAML 2.0</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3" style="padding: 10px">
-          <a href="https://github.com/Unit4/OpenID-Connect-Authenticator">
-            <h2>OpenID-Connect-Authenticator</h2>
-          </a>
-          <p>OpenID Connect authenticator for Agresso Business World Milestone 3 and later</p>
-        </div>
-      </div><!--/row-->
-    </div>
-  </div>
+<body ng-app="U4OssApp">
+  <u4-app/>
 </body>
 </html>
