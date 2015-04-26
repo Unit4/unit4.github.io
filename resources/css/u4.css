@@ -63,8 +63,51 @@
 	color: rgb(242,121,35);
 }
 
+.u4-background-green {
+	background: rgb(184,210,51);
+}
+
+.u4-background-dark-grey {
+	background: rgb(105,116,123) !important;
+}
+
+.u4-background-light-grey {
+	background: rgb(234,235,238);
+}
+
+.u4-background-blue {
+	background: rgb(73,181,225);
+}
+
+.u4-background-orange {
+	background: rgb(242,121,35);
+}
+
 .jumbotron {
-	background-color: rgb(234,235,238);
+	background-color: transparent;
+	margin-bottom: 10px;
+}
+
+a.u4-badge, a.u4-badge:hover {
+	color: rgb(105,116,123);
+	padding-right: 3px;
+}
+
+.u4-statistics {
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+.u4-separator-small {
+	height: 1px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+.u4-separator-big {
+	height: 4px;
+	margin-top: 5px;
+	margin-bottom: 15px;
 }
 
 repo {
@@ -73,14 +116,4 @@ repo {
 
 repo a, a:hover {
 	color: rgb(184,210,51);
-}
-
-repo a.u4-badge, a.u4-badge:hover {
-	color: rgb(105,116,123);
-	padding-right: 3px;
-}
-
-repo .statistics {
-	padding-top: 0px;
-	padding-bottom: 10px;
 }
