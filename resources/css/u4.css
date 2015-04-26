@@ -26,6 +26,10 @@
 	h3 {
 		font-size: 30px;
 	}
+
+	.u4-badge {
+		font-size: 15px;
+	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -69,4 +73,14 @@ repo {
 
 repo a, a:hover {
 	color: rgb(184,210,51);
+}
+
+repo a.u4-badge, a.u4-badge:hover {
+	color: rgb(105,116,123);
+	padding-right: 3px;
+}
+
+repo .statistics {
+	padding-top: 0px;
+	padding-bottom: 10px;
 }
